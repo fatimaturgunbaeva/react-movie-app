@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(3, 7, 70);
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  background-color: rgb(16, 4, 122);
+  padding: 30px 0;
+  border: none;
+  margin-bottom: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 12px ;
+  margin: 0 auto;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  border: 2px solid white ;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: transparent;
+  color: white;
+}
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px
+}
+
+.card {
+  background-color: rgb(6, 6, 100);
+  overflow: hidden;
+  position: relative;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card:hover img {
+  transform: scale(1.05);
+}
+.card .info {
+  padding: 10px;
+}
+.rate {
+  background-color: green;
+  padding: 5px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.rate.red {
+  background-color: red;
+}
+
+.card img {
+  max-width: 100%;
+  transition: .3s;
+
+}
+.card .overview {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  color: black;
+  width: 100%;
+  background-color: #f4f2f2f7;
+  transform: translateY(200%); 
+  transition: .3s;
+  padding: 10px;
+  
+}
+/* .card:hover .overview {
+  transform: translateY(0);
+
+} */
